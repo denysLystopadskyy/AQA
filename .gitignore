@@ -36,7 +36,6 @@ local.properties
 .loadpath
 .recommenders
 /.idea/
-!/pom.xml
 /AQA.iml
 .idea/workspace.xml
 /target/
