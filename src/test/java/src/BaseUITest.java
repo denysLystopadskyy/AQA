@@ -8,6 +8,9 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.support.PageFactory;
+
+import src.pages.HomePage;
 
 public class BaseUITest {
 
@@ -37,5 +40,10 @@ public class BaseUITest {
         return new ChromeDriver();
     }
 
+
+    public HomePage openDemoSite(WebDriver driver) {
+        driver.get("https://demostore.x-cart.com/");
+        return PageFactory.initElements(driver, HomePage.class);
+    }
 
 }
