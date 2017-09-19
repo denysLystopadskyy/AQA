@@ -1,6 +1,6 @@
 package animal;
 
-public class Cat extends Animal implements Interface1{
+public class Cat extends Animal {
 
     public Cat(int age) {
         super(age);
